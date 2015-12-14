@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <style>
+        .a img{
+            max-width:450px;_width:expression(this.width > 450 ? "450px" : this.width);
+            max-height:150px;_height:expression(this.height > 150 ? "150px" : this.height) ;
+        }
+        .a{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<center style="color: red;font-size: 17px;margin-top: 25px">图片菜单</center>
+<div class="a" style="margin-top: 8%;"><img id="weixinImgMenu" src=""></div>
+<center style="color: red;font-size: 17px;margin-top: 10%">文本菜单</center>
+<textarea id="getTxt" style="height: 150px;width: 280px;resize: none;margin-top: 8%;margin-left: 4%" readonly="readonly"></textarea>
+<script type="text/javascript" src="../../public/javascripts/public/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/getImgMenu.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/getTxtMenu.js"></script>
+</body>
+</html>

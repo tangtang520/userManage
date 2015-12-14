@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <link href="../../public/stylesheets/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body onbeforeunload="doexit()">
+<div class="head01">
+    <div class="head02"><font size="5px">个人管理后台</font></div>
+    <div class="title">
+        <!--<div onclick="tah(0)" style="float: left;clear: right">首页</div>-->
+        <div  onclick='tah(1)' class="titleSame">用户管理</div>
+        <div style="margin-left: 200px"  onclick='tah(2)' class="titleSame">数据管理</div>
+        <!--<div onclick='tah(4)' class="titleSame">邀请码管理</div>-->
+        <!--<div  onclick='tah(3)' class="titleSame">应用管理</div>-->
+    </div>
+</div>
+<div class="headLast">
+    <div class="lagout"><a style="text-decoration: none;font-size: 20px"  onclick="doexit()">退出登录</a></div>
+</div>
+<!--<div style="margin-left: 1000px"><a style="text-decoration: none;font-size: 20px" href="#" onclick="window.location.href='page?command=login'">退出登录</a></div>-->
+<!--查询功能-->
+<div style="margin-top: 25px;margin-left: 40px">
+    <div style="float: left;clear:right;">
+        <select id="findChange">
+            <option value="username">用户名</option>
+            <option value="name">姓名</option>
+            <option value="age">年龄</option>
+            <option value="sex">性别</option>
+            <option value="country">国家</option>
+        </select>
+    </div>
+    <div style="float: left;clear: right"><input type="text" id="findText"></div>
+    <div><input id="dododo" type="button" value="查询" onclick="find()"></div>
+</div>
+<div style="margin-left: 850px">
+    本次登陆时间:<input type="text" id="nowTime"><br>
+    总登陆时间:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="txtTime">
+
+</div>
+
+<div style="margin-top: 50px;margin-left: 40px"><table id="fillTable"></table></div>
+
+<div class="page">
+    <p><a id='firstPage' href="#">首页</a>
+        <a  id='prev' href="#">上一页</a>
+        <span  id='current_page'>1</span>
+        <span style="padding:0 3px;">/</span>
+        <span id='total'></span>
+        <a id='nextPage' href="#">下一页</a>
+        <a id='lastPage'href="#">尾页</a>
+        转到 <input name="" type="text" id='pageindex' class="t_pg" />   页  <a id='jumpPage' href="#">转</a>
+    </p>
+</div>
+
+<script type="text/javascript" src="../../public/javascripts/public/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/public/js/jquery-1.8.2.js" ></script>
+<script type="text/javascript" src="../../public/javascripts/public/js/jquery-ui-1.9.0.custom.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/management.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/skip.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/time.js"></script>
+</body>
+</html>

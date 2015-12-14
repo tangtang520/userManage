@@ -1,0 +1,132 @@
+body {
+
+
+    margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul li{list-style-type: none}
+.move{
+    margin-left: 400px;
+    margin-top: 95px;
+    float: left;
+    clear: right;
+}
+#text{
+    width: 145px;
+    height:25px ;
+    border:1px solid darkgray ;
+    background-color: #fefefe;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+#password{
+    width: 145px;
+    height:25px ;
+    border:1px solid darkgray ;
+    background-color: #fefefe;
+    margin-top: 0px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+#icode{
+    margin-left: 12px;
+    height: 23px;
+    width: 145px;
+}
+.buttxon{
+    /*margin-top: -26px;*/
+    /*margin-right: 145px;*/
+    /*float: right;*/
+    /*clear: left;*/
+    float: left;
+    clear: right;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#box23{
+    width:200px;
+    height:40px;
+    /*background: url("../../public/images/login.png");*/
+    background-size: 100% 100%;
+    margin-top: 17px;
+    margin-left: 45px;
+    border: 0px;
+    color: #ffffff;
+    background-color: cornflowerblue;
+}
+
+
+/*表格样式*/
+
+table
+{
+    border-collapse:collapse;
+}
+
+th, td
+{
+    border: 1px solid skyblue;
+    text-align: center;
+}
+th{
+    background-color: steelblue;
+    height: 35px;
+    width: 135px;
+    border-top: none;
+    font-size: 16px;
+}
+td{
+    height: 30px;
+    width: 135px;
+    font-size: 14px;
+}
+/*分页效果*/
+.page {
+    color:#295568;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 32%;
+    float: left;
+    clear: right;
+}
+.page a { background:#DAF1FC; padding:2px 5px;border:1px #8FB9D0 solid;
+    color:#295568;text-decoration: none}
+
+.head01{
+    background-color: steelblue;
+    margin-top: 0;
+    height: 70px;
+}
+.head02{
+    color: #ffffff;
+    margin-left: 8%;
+    height: 30px;
+    line-height: 60px;
+}
+.title{
+    margin-left:32%;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.headLast{
+    height: 30px;
+    background-color: midnightblue;
+}
+.lagout{
+    font-size: 14px;
+    margin-left: 900px;
+    line-height: 30px;
+}
+.doLagout{
+    color: #ffffff;
+    text-decoration: none;
+}
+.titleSame{
+    float: left;
+    clear: right;
+
+}

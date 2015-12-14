@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>信息界面</title>
+
+</head>
+<body>
+<div style="font-size: 30px"><center>我的头像</center></div>
+<div style="margin-top: 20px;margin-left: 580px" id="opinionImage"><img style="width: 100px;height: 100px" id="myImage" src=""></div>
+<div style="float: left;clear: right;margin-top: 55px;margin-left: 480px"><input  type="file" id="addAgainImage"></div>
+<div style="float: left;clear: right;margin-top: 40px;margin-left: -70px"><input style="background-color: lightsteelblue;background-size: 100% 100%;border: 0;font-size: 18px;width: 150px;
+                   color: #ffffff; height: 40px" type="submit" value="添加/更换图片" onclick="changeImage()"></div>
+<div style="margin-top: 150px"></div>
+<hr>
+<center>查看上传压缩包中的内容</center>
+<div><input style="margin-left: 500px;margin-top: 20px" type="button" value="查看数据管理中上传的压缩包中的内容" onclick="seeImageAll()"></div>
+<div style="text-align: center;margin-top: 30px" id="outputContainer"></div>
+<script type="text/javascript" src="../../public/javascripts/public/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/info.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/changeImage.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/dopackage.js"></script>
+</body>
+</html>

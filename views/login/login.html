@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+
+</head>
+<body style="margin: 0">
+<div style="width: 100%;height: 50px;background-color:#eff4fa;border-bottom: 1px solid #d6dfea"></div>
+<div style="float: left;clear: right;margin-top: 50px"><img width="700px" height="250px" src="../../public/images/image01.jpg"></div>
+<div style="float: left;clear: right;border: 1.5px solid lightsteelblue;margin-top: 50px;height: 400px;width: 350px">
+    <div style="height: 45px;border-bottom: 1px solid #d6dfea">
+        <a style="text-decoration: none;color: darkgray;font-size: 17px;float: left;clear: right;
+         margin-top: 13px;margin-left: 50px" href="#" onclick="click01()" onmousemove="this.style.color='black'" onmouseout="this.style.color='darkgray'" >登陆</a>
+        <a style="text-decoration: none;color: darkgray;font-size: 17px;float: left;clear: right;
+         margin-top: 13px;margin-left: 75px" href="#" onclick="click02()" onmousemove="this.style.color='black'" onmouseout="this.style.color='darkgray'" >注册</a>
+        <a style="text-decoration: none;color: darkgray;font-size: 17px;float: left;clear: right;
+         margin-top: 13px;margin-left: 60px" href="#" onclick="click03()" onmousemove="this.style.color='black'" onmouseout="this.style.color='darkgray'" >上传图片</a>
+
+    </div>
+    <div id="loginMiss">
+        <input  style="margin-top: 40px; margin-left: 20%;margin-right: 15%;height: 25px;
+    width: 210px;color:#aaa;line-height: 15px " value="账号"  type="text" id="text" name="text"
+                onfocus="if(value=='账号'){value=''}"
+                onblur="if(value==''){value='账号'}">
+
+        <input style="margin-top: 30px;color:#aaa ; margin-left: 20%;margin-right: 15%;height: 25px;width: 210px" id="showPwd" class="txt" type="text" value="密码" tabindex="2" />
+        <input id="password" class="txt" name="password" type="password" style="display: none;margin-top: 30px;margin-left: 20%;
+    margin-right: 15%;height: 25px;width: 210px" />
+
+        <input   type="text" value="验证码" style="margin-top: 30px;float: left;clear: right; color:#aaa ;
+    margin-left: 20%;margin-right: 15%;height: 25px;width: 105px"id="icode"
+                 onfocus="if(value=='验证码'){value=''}"
+                 onblur="if(value==''){value='验证码'}">
+
+
+        <div style="float: left;clear: right;margin-top: 27px;margin-left: -48px" id="getCode"></div><br/>
+        <!--<input type="button" value="注册" onclick="register()"><br/>-->
+        <!--<div id="getCode"></div>-->
+        <!--<input type="text" id="icode">-->
+        <a id="changeCode" style="text-decoration:none;color:#225592;
+    font-size: 12px;margin-left: 240px " onclick="changeCode()" href="#">看不清，换一张</a><br/>
+        <input id="dologin" style="background-color:cornflowerblue ;margin-left: 68px;
+    width: 210px;height: 40px;background-size: 100% 100%;color: #ffffff;border: 0;font-size: 18px;margin-top: 30px"
+               type="submit" value="登 陆" onclick="dologin()">
+    </div>
+    <div style="display: none" id="registerMiss">
+        <!--<div id="coo"></div>-->
+        <div style="float: left;clear: right;margin-top: 20px;margin-left: 80px"><a style="color: darkgray" >用户名：</a><input onchange="isLive()" style="height: 16px" type="text" name="text" id="resgText">
+        <a style="color: red;font-size: 5px" id="isShow"></a></div>
+        <div style="float: left;clear: right;margin-top: 15px;margin-left: 80px"><a style="color: darkgray" >密 码：</a>&nbsp;&nbsp;&nbsp;<input type="password"  id="resgPassword"></div>
+        <div style="float: left;clear: right;margin-top: 15px;margin-left: 80px"><a style="color: darkgray" >姓 名：</a>&nbsp;&nbsp;&nbsp;<input type="text" id="resgName"></div>
+        <div style="float: left;clear: right;margin-top: 15px;margin-left: 80px"><a style="color: darkgray" >年 龄：</a>&nbsp;&nbsp;&nbsp;<input onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')" id="resgAge"></div>
+        <div style="float: left;clear: left;margin-top: 15px;margin-left: 80px"><a style="color: darkgray">性 别：</a>&nbsp;&nbsp;&nbsp;<input type="radio" name="sex"  value="男" id="sexB">男
+        <input type="radio" name="sex" value="女" id="sexG">女
+        </div>
+        <div style="float: left;clear: left;margin-top: 15px;margin-left: 80px"><a style="color: darkgray" >电 话：</a>&nbsp;&nbsp;&nbsp;<input maxlength="11" type="tel" id="resgPhone"></div>
+        <div style="float: left;clear: right;margin-top: 15px;margin-left: 80px"><a style="color: darkgray" >国 籍：</a>&nbsp;&nbsp;&nbsp;<input type="text" id="resgCountry"></div>
+        <div style="float: left;clear: left;">
+            <input id="doregister" type="submit" value="注 册"
+                   style="background-color: cornflowerblue;background-size: 100% 100%;border: 0;font-size: 18px;width: 210px;
+                   color: #ffffff; height: 40px;margin-left: 72px;margin-top: 20px" onclick="doregister()"></div>
+
+
+
+
+
+    </div>
+    <div style="display: none" id="upload">
+
+    <div> <form name="form0" id="form0" >
+        <div style="margin-top: 30px;margin-left: 120px"><input type="file" name="file0" id="file0" multiple="multiple" /></div><br/>
+        <div style="margin-left: 80px;margin-top: 10px"><img style="width: 200px;height: 200px" src="" id="img0" ></div>
+
+    </form>
+    </div>
+    <!--<div>-->
+        <!--<p style="margin-left: 140px">上传压缩包</p>-->
+        <!--<input style="margin-left: 110px;margin-top: -20px" type="file" id="yasuo" onclick="yasuo()">-->
+    <!--</div>-->
+
+    </div>
+
+</div>
+<script src="http://www.codefans.net/ajaxjs/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/public/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/public/js/jquery-1.8.2.js" ></script>
+<script type="text/javascript" src="../../public/javascripts/public/js/jquery-ui-1.9.0.custom.min.js"></script>
+<script type="text/javascript" src="../../public/javascripts/js/login.js"></script>
+</body>
+</html>
